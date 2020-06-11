@@ -37,8 +37,7 @@ The parameters for the model are found in `sweeps/mnist_sweep/config.json` and m
 
 ## data
 The synthetic datasets are provided in `data/runhet/*.npz` or `data/runorfunc/*.npz`
-The colored MNIST datasets are provided in `data/mnist/*.npz`
-All the dataset generation files can be found in `src/data_processing/`
+Due to space constraint, all the dataset generation files for synthetic data and colored MNIST can be found in `src/data_processing/`. The dataset generation code for PACS is pulled from https://github.com/ameroyer/TFDatasets.
 
 ## model
 
