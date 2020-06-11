@@ -1,0 +1,4 @@
+"data_dir": "./data",
+"log_dir": "./n/holyscratch01/dwork_lab/rhong/tfboard_logs",
+"exp_dir": "/n/holyscratch01/dwork_lab/rhong/experiments",
+"repr_dir":"/n/holyscratch01/dwork_lab/rhong/experiments"

@@ -1,0 +1,29 @@
+{
+    "sweep_name": "mnist_digit75_color80test_5050_041020_fair_0_05",
+    "script": ["src/run_laftr.py", "src/run_unf_clf.py"],
+    "config": "sweeps/mnist_sweep/config.json",
+    "n_proc": 15,
+    "xargs": false,
+    "exclude_guppies": "guppy9,guppy10,guppy18,guppy25,guppy13,guppy22 ",
+    "partition": "gpuc",
+    "templates": {
+        "data": ["mnist"],
+        "dirs": "odyssey"
+    },
+    "overrides": {
+        "model": {
+            "class_coeff": [1.0],
+            "fair_coeff":  [0.05],
+            "recon_coeff": [0.0, 0.05, 0.1, 0.15, 0.20, 0.25, 0.3],
+            "class": ["MnistCnnMultiWassGan"],
+            "adim": [3],
+            "seed": [1]
+        },
+        "transfer": {
+            "epoch_number": [900],
+            "repr_phase": ["Test", "Valid"],
+           "model_seed": [1]
+        }
+    }
+}
+

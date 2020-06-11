@@ -1,0 +1,28 @@
+{
+    "sweep_name": "run_agree_interact_common_20_061619_prod_1_4",
+    "script": ["src/run_laftr.py", "src/run_unf_clf.py"],
+    "config": "sweeps/runhet_sweep/config.json",
+    "n_proc": 15,
+    "xargs": false,
+    "exclude_guppies": "guppy9,guppy10,guppy18,guppy25,guppy13,guppy22 ",
+    "partition": "gpuc",
+    "templates": {
+        "data": ["runhet"],
+        "dirs": "odyssey"
+    },
+    "overrides": {
+        "model": {
+            "class_coeff": [1.0],
+            "fair_coeff":  [0.0, 0.25, 0.5, 0.75, 1.0],
+            "recon_coeff": [0.0, 0.25, 0.5, 0.75, 1.0],
+            "class": ["MultiEqOddsUnweightedWassGan"],
+            "adim": [4]
+        },
+        "transfer": {
+            "epoch_number": [900],
+            "repr_phase": ["Test", "Valid"],
+           "model_seed": [1]
+        }
+    }
+}
+

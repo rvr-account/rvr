@@ -1,0 +1,9 @@
+"name": "pacs",
+"attr0_name": "Study0",
+"attr1_name": "Study1",
+"attr2_name": "Study2",
+"biased": false,
+"even": false,
+"use_attr": true,
+"cnn": true,
+"multi": 3

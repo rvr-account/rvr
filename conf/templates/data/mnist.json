@@ -1,0 +1,8 @@
+"name": "mnist",
+"attr0_name": "Study0",
+"attr1_name": "Study1",
+"biased": false,
+"even": false,
+"use_attr": true,
+"cnn": true,
+"multi": 2
