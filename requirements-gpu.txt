@@ -6,7 +6,7 @@ Jinja2==2.10
 Markdown==2.6.11
 MarkupSafe==1.0
 numpy==1.14.5
-protobuf==3.6.0
+protobuf==3.18.3
 six==1.11.0
 tensorboard==1.9.0
 tensorflow-gpu==1.9.0
